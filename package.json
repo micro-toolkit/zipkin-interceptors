@@ -1,0 +1,44 @@
+{
+  "name": "micro-zipkin-interceptors",
+  "version": "1.0.0",
+  "description": "Micro toolkit zip interceptors",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --exit",
+    "test:debug": "NODE_ENV=test mocha --watch",
+    "lint": "eslint .",
+    "test:coverage": "NODE_ENV=test nyc mocha --exit || true && nyc check-coverage",
+    "dep-check": "dependency-check . --entry app/**/*.js",
+    "dep-check-unused": "dependency-check . --unused"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/micro-toolkit/zipkin-interceptors.git"
+  },
+  "keywords": [
+    "0MQ",
+    "ZeroMQ",
+    "SOA",
+    "microservices",
+    "micro-toolkit"
+  ],
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micro-toolkit/zipkin-interceptors/issues"
+  },
+  "homepage": "https://github.com/micro-toolkit/zipkin-interceptors",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "dependency-check": "^3.0.0",
+    "eslint": "^4.10.0",
+    "eslint-plugin-node": "^5.2.1",
+    "mocha": "^5.0.0",
+    "nodemon": "^1.12.1",
+    "nyc": "^11.3.0"
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}

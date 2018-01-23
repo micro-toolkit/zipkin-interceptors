@@ -1,0 +1,17 @@
+env:
+  node: true
+  mocha: true
+rules:
+  "node/no-unpublished-require": [2, {
+    allowModules: ["knex-cleaner", "supertest", "supertest-as-promised", "chai", "nock", "moment"]
+  }]
+globals:
+  app: true
+  request: true
+  should: true
+  blueprint: true
+  Bookshelf: true
+  knex: true
+  seed: true
+  stubs: true
+  helpers: true
